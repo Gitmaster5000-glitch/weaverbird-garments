@@ -1,39 +1,28 @@
+// Scroll animation
 const faders = document.querySelectorAll('.fade');
 
-window.addEventListener('scroll', () => {
-faders.forEach(section => {
-const rect = section.getBoundingClientRect();
-if(rect.top < window.innerHeight - 100){
-section.classList.add('show');
+const appearOnScroll = new IntersectionObserver(
+(entries)=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add('show');
 }
 });
+},
+{threshold:0.2}
+);
+
+faders.forEach(fader=>{
+appearOnScroll.observe(fader);
 });
-// Counter Animation
-const counters = document.querySelectorAll('.counter');
 
-const runCounter = () => {
-counters.forEach(counter => {
-const target = +counter.getAttribute('data-target');
-const increment = target / 200;
-
-const updateCount = () => {
-const count = +counter.innerText;
-
-if(count < target){
-counter.innerText = Math.ceil(count + increment);
-setTimeout(updateCount, 10);
-} else {
-counter.innerText = target;
+// Modal functions
+function openModal(image,name){
+document.getElementById('modal').style.display="flex";
+document.getElementById('modal-img').src=image;
+document.getElementById('modal-text').innerText=name;
 }
-};
 
-updateCount();
-});
-};
-
-window.addEventListener("scroll", () => {
-const statsSection = document.querySelector(".stats");
-if(statsSection.getBoundingClientRect().top < window.innerHeight){
-runCounter();
+function closeModal(){
+document.getElementById('modal').style.display="none";
 }
-});
