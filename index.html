@@ -3,114 +3,84 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Weaver Bird Garments Ltd</title>
+<title>Weaver Bird Catalogue</title>
 
 <style>
-* {
+body{
 margin:0;
-padding:0;
-box-sizing:border-box;
-font-family: Arial, sans-serif;
-scroll-behavior:smooth;
+font-family:Arial;
+background:#f5f7fa;
 }
 
-body { background:#f4f6f8; }
-
-/* NAVIGATION */
-nav {
+nav{
 background:#0b3d91;
-padding:15px 60px;
+color:white;
+padding:15px;
 display:flex;
 justify-content:space-between;
 align-items:center;
-color:white;
-position:fixed;
-width:100%;
-top:0;
-z-index:1000;
 }
 
-nav ul {
-list-style:none;
-display:flex;
-gap:25px;
-}
-
-nav a {
-color:white;
-text-decoration:none;
-font-weight:bold;
-}
-
-nav a:hover { opacity:0.8; }
-
-/* HERO */
-.hero {
-height:100vh;
-background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-url('https://images.unsplash.com/photo-1520975916090-3105956dac38') center/cover;
-color:white;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-}
-
-.hero h1 { font-size:48px; }
-.hero p { margin:20px 0; font-size:20px; }
-
-.btn {
-background:white;
-color:#0b3d91;
-padding:12px 25px;
+nav img{
+height:40px;
 border-radius:5px;
-text-decoration:none;
+}
+
+.hero{
+background:url('factory.jpg') center/cover;
+height:70vh;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+text-align:center;
+font-size:30px;
 font-weight:bold;
+text-shadow:2px 2px 5px black;
 }
 
-/* SECTIONS */
-section {
-padding:100px 60px;
-max-width:1200px;
-margin:auto;
+section{
+padding:40px;
 }
 
-h2 {
+h2{
 color:#0b3d91;
+text-align:center;
 margin-bottom:20px;
 }
 
-.grid {
+.grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
 }
 
-.card {
+.card{
 background:white;
-padding:25px;
+padding:10px;
 border-radius:10px;
-box-shadow:0 4px 15px rgba(0,0,0,0.1);
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+text-align:center;
 transition:0.3s;
 }
 
-.card:hover {
-transform:translateY(-5px);
+.card:hover{
+transform:scale(1.05);
 }
 
-/* DARK SECTION */
-.dark {
-background:#0b3d91;
-color:white;
+.card img{
+width:100%;
+border-radius:10px;
+height:180px;
+object-fit:cover;
 }
 
-/* FOOTER */
-footer {
+footer{
 background:#111;
 color:white;
 text-align:center;
 padding:20px;
+margin-top:40px;
 }
 </style>
 </head>
@@ -118,91 +88,60 @@ padding:20px;
 <body>
 
 <nav>
-<h3>Weaver Bird Garments</h3>
-<ul>
-<li><a href="#about">About</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#branches">Branches</a></li>
-<li><a href="#partners">Partners</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
+<div><img src="logo.png"></div>
+<div>Weaver Bird Catalogue</div>
 </nav>
 
 <div class="hero">
-<div>
-<h1>Premium Uniform Manufacturing Since 1996</h1>
-<p>Delivering quality, durability and innovation across Kenya.</p>
-<a href="#contact" class="btn">Contact Us</a>
-</div>
+Premium Uniform Catalogue<br>
+Quality • Style • Durability
 </div>
 
-<section id="about">
-<h2>About the Company</h2>
-<p><strong>Established:</strong> 1996</p>
-<p><strong>Headquarters:</strong> Thika Light Industrial Area, Muindi Mbingu Street</p>
-<br>
-<p><strong>Vision:</strong> To be the leading provider of premium uniforms in Kenya, renowned for exceptional quality, innovation, and customer-focused solutions.</p>
-<br>
-<p><strong>Mission:</strong> To deliver superior uniforms that meet the highest standards of durability and style, while fostering a culture of excellence, trust, and collaboration.</p>
-<br>
-<p><strong>Core Values:</strong> Integrity, Professionalism, Respect, Pride, Teamwork, Accountability.</p>
-</section>
+<section>
+<h2>Our Products</h2>
 
-<section id="services">
-<h2>Our Services</h2>
 <div class="grid">
-<div class="card">
-<h3>School Uniforms</h3>
-<p>Primary and secondary schools nationwide.</p>
+
+<div class="card"><img src="bedsheets.jpg"><p>Bedsheets</p></div>
+<div class="card"><img src="bedcover.jpg"><p>Bedcover</p></div>
+<div class="card"><img src="bucket.jpg"><p>Bucket</p></div>
+<div class="card"><img src="dress.jpg"><p>Dress</p></div>
+<div class="card"><img src="dustcoat.jpg"><p>Dustcoat</p></div>
+<div class="card"><img src="games_kit_shirts.jpg"><p>Games Kit Shirts</p></div>
+<div class="card"><img src="games_kit_shorts.jpg"><p>Games Kit Shorts</p></div>
+<div class="card"><img src="hijab.jpg"><p>Hijab</p></div>
+<div class="card"><img src="legwarmers.jpg"><p>Legwarmers</p></div>
+<div class="card"><img src="long_sleeved_sweater.jpg"><p>Long Sweater</p></div>
+<div class="card"><img src="long_sleeved-t-shirt.jpg"><p>Long T-Shirt</p></div>
+<div class="card"><img src="mattress.jpg"><p>Mattress</p></div>
+<div class="card"><img src="mug.jpg"><p>Mug</p></div>
+<div class="card"><img src="night_dress.jpg"><p>Night Dress</p></div>
+<div class="card"><img src="p.e_shorts.jpg"><p>P.E Shorts</p></div>
+<div class="card"><img src="p.e_t-shirt.jpg"><p>P.E T-Shirt</p></div>
+<div class="card"><img src="pillow.jpg"><p>Pillow</p></div>
+<div class="card"><img src="pillow_case.jpg"><p>Pillow Case</p></div>
+<div class="card"><img src="polo_shirts.jpg"><p>Polo Shirts</p></div>
+<div class="card"><img src="pyjamas.jpg"><p>Pyjamas</p></div>
+<div class="card"><img src="raincoat.jpg"><p>Raincoat</p></div>
+<div class="card"><img src="scarf.jpg"><p>Scarf</p></div>
+<div class="card"><img src="shirt.jpg"><p>Shirt</p></div>
+<div class="card"><img src="short_sleeved-t-shirt.jpg"><p>Short T-Shirt</p></div>
+<div class="card"><img src="skirt.jpg"><p>Skirt</p></div>
+<div class="card"><img src="sleeveless_sweater.jpg"><p>Sleeveless Sweater</p></div>
+<div class="card"><img src="spoon.jpg"><p>Spoon</p></div>
+<div class="card"><img src="swimming_cap.jpg"><p>Swimming Cap</p></div>
+<div class="card"><img src="swimming_costume.jpg"><p>Swimming Costume</p></div>
+<div class="card"><img src="tie.jpg"><p>Tie</p></div>
+<div class="card"><img src="tracksuit.jpg"><p>Tracksuit</p></div>
+<div class="card"><img src="trouser.jpg"><p>Trouser</p></div>
+<div class="card"><img src="blazer.jpg"><p>Blazer</p></div>
+<div class="card"><img src="factory.jpg"><p>Factory View</p></div>
+
 </div>
-
-<div class="card">
-<h3>Corporate & Institutional Wear</h3>
-<p>Hotel staff, corporate offices and hospitality uniforms.</p>
-</div>
-
-<div class="card">
-<h3>Security & Specialized Gear</h3>
-<p>Protective equipment, rider suits, overalls and reflective jackets.</p>
-</div>
-
-<div class="card">
-<h3>Custom Branding</h3>
-<p>Professional embroidery and high-quality screen printing.</p>
-</div>
-
-<div class="card">
-<h3>Sportswear</h3>
-<p>Tracksuits and rugby kits for teams and institutions.</p>
-</div>
-</div>
-</section>
-
-<section id="branches" class="dark">
-<h2>Our Branches</h2>
-<p><strong>Nairobi (Main):</strong> Samdyllis Plaza, River Road | +254 724 089655</p>
-<p><strong>TRM Mall:</strong> 1st Floor, Opp. Carrefour | +254 725 666444</p>
-<p><strong>Thika Shop 1:</strong> Eco Bank Plaza, Opp. Post Bank | +254 775 444700</p>
-<p><strong>Thika Shop 2:</strong> Twin Oak Plaza, Opp. Safaricom | +254 738 444700</p>
-<p><strong>Kisumu:</strong> Oginga Odinga Street | +254 754 666444</p>
-</section>
-
-<section id="partners">
-<h2>Sponsorships & Community Impact</h2>
-<p><strong>WeaverBird Jamhuri Cup:</strong> Annual sports tournament in Tharaka Nithi County.</p>
-<p><strong>Sports Development:</strong> Sponsored Materi Bakers FC and Falcon FC.</p>
-<p><strong>Institutional Partners:</strong> Suppliers for St. George’s Girls’ Secondary School and various corporate sectors.</p>
-</section>
-
-<section id="contact" class="dark">
-<h2>Contact Us</h2>
-<p>Main Office: +254 722 264464 / +254 20 2051487</p>
-<p>Email: sales@weaverbirdkenya.com | info@weaverbirdkenya.com</p>
-<p>Website: www.weaverbirdkenya.com</p>
 </section>
 
 <footer>
-© 2026 Weaver Bird Garments Ltd | All Rights Reserved
+© Weaver Bird Garment Manufacturers Ltd
 </footer>
 
 </body>
