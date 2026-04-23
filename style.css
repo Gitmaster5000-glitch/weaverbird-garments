@@ -131,3 +131,19 @@ background: #A61D21;
 padding: 20px;
 text-align: center;
 }
+.stats{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.stat{
+text-align:center;
+}
+
+.stat h1{
+color:#C1272D;
+font-size:48px;
+margin:0;
+}
