@@ -4,102 +4,201 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Weaver Bird Garments Ltd</title>
+
 <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f4f6f8;
+* {
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, sans-serif;
+scroll-behavior:smooth;
 }
-header {
-    background: #0b3d91;
-    color: white;
-    text-align: center;
-    padding: 60px 20px;
+
+body { background:#f4f6f8; }
+
+/* NAVIGATION */
+nav {
+background:#0b3d91;
+padding:15px 60px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+color:white;
+position:fixed;
+width:100%;
+top:0;
+z-index:1000;
 }
-header h1 {
-    margin: 0;
-    font-size: 40px;
+
+nav ul {
+list-style:none;
+display:flex;
+gap:25px;
 }
-section {
-    padding: 60px 20px;
-    max-width: 1000px;
-    margin: auto;
+
+nav a {
+color:white;
+text-decoration:none;
+font-weight:bold;
 }
-h2 {
-    color: #0b3d91;
+
+nav a:hover { opacity:0.8; }
+
+/* HERO */
+.hero {
+height:100vh;
+background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+url('https://images.unsplash.com/photo-1520975916090-3105956dac38') center/cover;
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
 }
-.services {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-}
-.card {
-    background: white;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    text-align: center;
-}
-footer {
-    background: #111;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
+
+.hero h1 { font-size:48px; }
+.hero p { margin:20px 0; font-size:20px; }
+
 .btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 25px;
-    background: white;
-    color: #0b3d91;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
+background:white;
+color:#0b3d91;
+padding:12px 25px;
+border-radius:5px;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* SECTIONS */
+section {
+padding:100px 60px;
+max-width:1200px;
+margin:auto;
+}
+
+h2 {
+color:#0b3d91;
+margin-bottom:20px;
+}
+
+.grid {
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card {
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 4px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover {
+transform:translateY(-5px);
+}
+
+/* DARK SECTION */
+.dark {
+background:#0b3d91;
+color:white;
+}
+
+/* FOOTER */
+footer {
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
 }
 </style>
 </head>
 
 <body>
 
-<header>
-<h1>Weaver Bird Garments Ltd</h1>
-<p>Reliable Mass Garment Production for Institutions</p>
-<a href="#contact" class="btn">Contact Us</a>
-</header>
+<nav>
+<h3>Weaver Bird Garments</h3>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#branches">Branches</a></li>
+<li><a href="#partners">Partners</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
 
-<section>
-<h2>About Us</h2>
-<p>
-Weaver Bird Garments Ltd is a Thika-based garment manufacturing company specializing in high-quality uniform production for schools, hospitals, corporations and institutions. 
-We provide reliable bulk garment production with consistent quality and timely delivery.
-</p>
+<div class="hero">
+<div>
+<h1>Premium Uniform Manufacturing Since 1996</h1>
+<p>Delivering quality, durability and innovation across Kenya.</p>
+<a href="#contact" class="btn">Contact Us</a>
+</div>
+</div>
+
+<section id="about">
+<h2>About the Company</h2>
+<p><strong>Established:</strong> 1996</p>
+<p><strong>Headquarters:</strong> Thika Light Industrial Area, Muindi Mbingu Street</p>
+<br>
+<p><strong>Vision:</strong> To be the leading provider of premium uniforms in Kenya, renowned for exceptional quality, innovation, and customer-focused solutions.</p>
+<br>
+<p><strong>Mission:</strong> To deliver superior uniforms that meet the highest standards of durability and style, while fostering a culture of excellence, trust, and collaboration.</p>
+<br>
+<p><strong>Core Values:</strong> Integrity, Professionalism, Respect, Pride, Teamwork, Accountability.</p>
 </section>
 
-<section>
+<section id="services">
 <h2>Our Services</h2>
-<div class="services">
-<div class="card">School Uniform Production</div>
-<div class="card">Corporate Wear Manufacturing</div>
-<div class="card">Hospital Uniform Supply</div>
-<div class="card">Custom Bulk Orders</div>
+<div class="grid">
+<div class="card">
+<h3>School Uniforms</h3>
+<p>Primary and secondary schools nationwide.</p>
+</div>
+
+<div class="card">
+<h3>Corporate & Institutional Wear</h3>
+<p>Hotel staff, corporate offices and hospitality uniforms.</p>
+</div>
+
+<div class="card">
+<h3>Security & Specialized Gear</h3>
+<p>Protective equipment, rider suits, overalls and reflective jackets.</p>
+</div>
+
+<div class="card">
+<h3>Custom Branding</h3>
+<p>Professional embroidery and high-quality screen printing.</p>
+</div>
+
+<div class="card">
+<h3>Sportswear</h3>
+<p>Tracksuits and rugby kits for teams and institutions.</p>
+</div>
 </div>
 </section>
 
-<section>
-<h2>Why Choose Us</h2>
-<ul>
-<li>Strict Quality Control</li>
-<li>Large Production Capacity</li>
-<li>Affordable Institutional Pricing</li>
-<li>On-Time Delivery</li>
-</ul>
+<section id="branches" class="dark">
+<h2>Our Branches</h2>
+<p><strong>Nairobi (Main):</strong> Samdyllis Plaza, River Road | +254 724 089655</p>
+<p><strong>TRM Mall:</strong> 1st Floor, Opp. Carrefour | +254 725 666444</p>
+<p><strong>Thika Shop 1:</strong> Eco Bank Plaza, Opp. Post Bank | +254 775 444700</p>
+<p><strong>Thika Shop 2:</strong> Twin Oak Plaza, Opp. Safaricom | +254 738 444700</p>
+<p><strong>Kisumu:</strong> Oginga Odinga Street | +254 754 666444</p>
 </section>
 
-<section id="contact">
+<section id="partners">
+<h2>Sponsorships & Community Impact</h2>
+<p><strong>WeaverBird Jamhuri Cup:</strong> Annual sports tournament in Tharaka Nithi County.</p>
+<p><strong>Sports Development:</strong> Sponsored Materi Bakers FC and Falcon FC.</p>
+<p><strong>Institutional Partners:</strong> Suppliers for St. George’s Girls’ Secondary School and various corporate sectors.</p>
+</section>
+
+<section id="contact" class="dark">
 <h2>Contact Us</h2>
-<p><strong>Location:</strong> Thika, Kenya</p>
-<p><strong>Email:</strong> info@weaverbirdgarments.co.ke</p>
-<p><strong>Phone:</strong> +254 XXX XXX XXX</p>
+<p>Main Office: +254 722 264464 / +254 20 2051487</p>
+<p>Email: sales@weaverbirdkenya.com | info@weaverbirdkenya.com</p>
+<p>Website: www.weaverbirdkenya.com</p>
 </section>
 
 <footer>
