@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Products</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+
+<body>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="products.html">Products</a>
+<a href="cart.html">Cart</a>
+</nav>
+
+<div class="container">
+
+<h2>Products</h2>
+
+<input id="search" onkeyup="search()" placeholder="Search products...">
+
+<br><br>
+
+<button onclick="filter('all')">All</button>
+<button onclick="filter('school')">School</button>
+<button onclick="filter('corporate')">Corporate</button>
+
+<div class="grid">
+
+<div class="card school">
+<img src="blazer.jpg">
+<p>Blazer</p>
+<button onclick="add('Blazer')">Add</button>
+</div>
+
+<div class="card school">
+<img src="shirt.jpg">
+<p>Shirt</p>
+<button onclick="add('Shirt')">Add</button>
+</div>
+
+<div class="card corporate">
+<img src="dustcoat.jpg">
+<p>Dustcoat</p>
+<button onclick="add('Dustcoat')">Add</button>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
