@@ -3,26 +3,75 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Weaverbird Kenya</title>
+<title>Weaverbird Garments Ltd</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-<h1>Weaverbird Kenya</h1>
+<h1>Weaverbird Garments Ltd</h1>
 <nav>
 <a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#stats">Our Capacity</a>
 <a href="#products">Products</a>
 <a href="#factory">Factory</a>
 <a href="#contact">Contact</a>
 </nav>
 </header>
 
+<!-- HERO -->
 <section id="home" class="section hero fade">
-<h2>Quality School Uniforms & Supplies</h2>
-<p>Trusted manufacturer of uniforms, bedding & institutional supplies.</p>
+<h2>Premium Uniform & Institutional Manufacturer in Kenya</h2>
+<p>Delivering quality uniforms, bedding & garments across East Africa.</p>
 </section>
 
+<!-- ABOUT -->
+<section id="about" class="section fade">
+<h2>About Our Company</h2>
+<p>
+Weaverbird Garments Ltd is a leading Kenyan-based garment manufacturing
+company specializing in school uniforms, corporate wear, hospital linen,
+and institutional bedding supplies.
+</p>
+
+<h3>Our Mission</h3>
+<p>To deliver durable, affordable, and professionally crafted garments.</p>
+
+<h3>Our Vision</h3>
+<p>To become East Africa’s most trusted uniform manufacturer.</p>
+</section>
+
+<!-- STATS / COUNTERS -->
+<section id="stats" class="section stats">
+<h2>Our Production Strength</h2>
+
+<div class="counter-grid">
+
+<div>
+<h3 class="counter" data-target="25000">0</h3>
+<p>Uniforms Produced Monthly</p>
+</div>
+
+<div>
+<h3 class="counter" data-target="120">0</h3>
+<p>Employees</p>
+</div>
+
+<div>
+<h3 class="counter" data-target="350">0</h3>
+<p>Institutions Served</p>
+</div>
+
+<div>
+<h3 class="counter" data-target="15">0</h3>
+<p>Years Experience</p>
+</div>
+
+</div>
+</section>
+
+<!-- PRODUCTS -->
 <section id="products" class="section fade">
 <h2>Our Products</h2>
 <div class="product-grid">
@@ -37,6 +86,11 @@
 <p>Blazer</p>
 </div>
 
+<div class="product" onclick="openModal('tracksuit.jpg','Tracksuit')">
+<img src="tracksuit.jpg">
+<p>Tracksuit</p>
+</div>
+
 <div class="product" onclick="openModal('mattress.jpg','Mattress')">
 <img src="mattress.jpg">
 <p>Mattress</p>
@@ -47,36 +101,32 @@
 <p>Pillow</p>
 </div>
 
-<div class="product" onclick="openModal('tracksuit.jpg','Tracksuit')">
-<img src="tracksuit.jpg">
-<p>Tracksuit</p>
-</div>
-
-<div class="product" onclick="openModal('tie.jpg','Tie')">
-<img src="tie.jpg">
-<p>Tie</p>
-</div>
-
 </div>
 </section>
 
+<!-- FACTORY -->
 <section id="factory" class="section fade">
 <h2>Our Factory</h2>
 <img src="factory.jpg" class="factory-img">
-<p>Modern production facility ensuring quality and efficiency.</p>
+<p>
+Our modern production facility is equipped with industrial sewing machines,
+quality control stations, and a skilled workforce to ensure consistency.
+</p>
 </section>
 
+<!-- CONTACT -->
 <section id="contact" class="section fade">
 <h2>Contact Us</h2>
 <p>Email: info@weaverbirdkenya.com</p>
 <p>Phone: +254 700 000 000</p>
+<p>Location: Nairobi, Kenya</p>
 </section>
 
 <footer>
-<p>© 2026 Weaverbird Kenya. All Rights Reserved.</p>
+<p>© 2026 Weaverbird Garments Ltd | All Rights Reserved</p>
 </footer>
 
-<!-- Modal -->
+<!-- MODAL -->
 <div id="modal" class="modal">
 <span class="close" onclick="closeModal()">×</span>
 <img id="modal-img">
